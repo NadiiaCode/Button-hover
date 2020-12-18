@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button hover</title>
+  </head>
+  <body>
+    <button id="subscribe">Subscribe</button>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        background: #20060e;
+      }
+
+      #subscribe {
+        font-family: "Roboto", sans-serif;
+        width: 350px;
+        height: 130px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        font-size: 60px;
+        letter-spacing: 3px;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(
+          to right,
+          #ff0000,
+          #ff6600,
+          #ffd000,
+          #eeff00,
+          #88ff00,
+          #00ff55,
+          #00ffea,
+          #00b7ff,
+          #0059ff,
+          #6f00ff,
+          #e100ff,
+          #ff00bf,
+          #ff0055,
+          #ff0000
+        );
+        background-size: 500%;
+        border: 10px double #500f23;
+        border-radius: 70px;
+      }
+
+      #subscribe:hover {
+        animation: glow 10s linear infinite;
+        box-shadow: 0px 0px 110px 30px #b97597;
+      }
+
+      @keyframes glow {
+        0% {
+          background-position: 500%;
+        }
+        100% {
+          background-position: 0;
+        }
+      }
+    </style>
+  </body>
+</html>
